@@ -1,0 +1,932 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+h1, h2{
+  color: #0f1c2e;
+}
+input{
+  outline: none;
+  cursor: pointer;
+  border:none;
+  border-radius:4px;
+}
+.container{
+  margin: auto;
+  width: 1300px;
+  max-width: 100%;
+}
+/*общее*/
+.highlighting{
+  color:#06bee1;
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  max-width: 220px;
+  width: 100%;
+}
+.title{
+  font-weight: 300;
+}
+.title--bold{
+  font-weight: bold;
+}
+.info{
+  font-size: 22px;
+}
+   /*кнопки*/
+.button__link{
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  color: #0842b7;
+  border-radius: 4px;
+  border:1px solid #0842b7;
+}
+.button__link-activ:hover{
+  font-size: 17px;
+  color: #ffffff;
+  background: #0842b7;
+  border:1px solid #0842b7;
+  box-shadow: 0 14px 28px rgba(3, 23, 139, 0.164), 0 10px 10px rgba(6, 8, 158, 0.13);
+}
+ /*текст*/
+.text{
+  font-size: 16px;
+  font-weight: 300;
+}
+  /*колонки*/
+  .col-60{
+    flex-basis: 60%;
+  }
+  .col-50{
+    flex-basis: 50%;
+  }
+  .col-30{
+    flex-basis: 30%;
+  }
+  .col-20{
+    flex-basis: 20%;
+  }
+
+/*карточки*/
+.cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.cards__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+/*header*/
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width:500px;
+  width: 100%;
+}
+.menu__link{
+  font-size: 14px;
+  font-weight: 700;
+  color: #777777;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  padding: 30px 0;
+}
+.menu__link-activ:hover{
+  color: #000000;
+  border-bottom: 2px solid #0056cf;
+}
+.tel{
+  color: #777777;
+  font-size: 24px;
+}
+.tel-bold{
+  color: #000000;
+  font-weight: 700;
+}
+
+/*hero*/
+.section__hero{
+  background: url(../img/bg-hero.png) no-repeat center / cover;
+  padding-top: 175px;
+  padding-bottom: 636px;
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+}
+.hero__info{
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 45px;
+}
+.hero__title{
+  font-size: 74px;
+}
+.hero__subtitle{
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+.hero__text{
+  max-width: 355px;
+}
+.hero__adv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 680px;
+}
+.hero__buttons{
+  display: flex;
+  flex-direction: column;
+}
+.hero__button__link{
+  margin-bottom: 15px;
+}
+.hero__adv__text{
+  max-width: 330px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 300;
+}
+.hero__adv__text--color{
+  color:#06bee1;
+}
+
+/*advantages*/
+.section__advantages{
+  margin-top: -300px;
+  margin-bottom: 115px;
+}
+.advantages__title{
+  font-size: 37px;
+  max-width:300px;
+  background:#fff;
+  padding: 15px ;
+}
+.advantages__stages{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+}
+.advantages__col{
+  display: flex;
+  flex-direction: column;
+}
+.advantages__col__title{
+  font-size: 345px;
+  font-weight: 100;
+  display: flex;
+}
+.title--color{
+  font-size: 112px;
+  display: flex;
+  align-items: flex-end;
+  font-weight:300;
+}
+.subtitle__tetx{
+  font-size: 24px;
+  font-weight: 300;
+  max-width: 270px;
+  padding-bottom: 35px;
+}
+.advantages__text{
+  line-height: 24px;
+}
+.advantages__text--scale{
+  max-width: 215px;
+}
+.analysis__image{
+  width: 100px;
+  height: 66px;
+  margin-bottom: 75px;
+}
+.tolking__image{
+  width: 79px;
+  height: 83px;
+  margin-bottom: 75px;
+}
+.subtitle--bold{
+  font-weight: bold;
+}
+/*proposal*/
+.section__proposal{
+  padding-top: 110px;
+}
+.proposal::after{
+  content:'';
+  position: absolute;
+  top: -110px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background:#EAF1F7;
+}
+.proposal{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.proposal__title{
+  max-width: 485px;
+  font-size: 36px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.proposal__info{
+  max-width: 355px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+/*training*/
+.section__training{
+  background:url(../img/training-dg.jpeg) no-repeat center / cover;
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+.training{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  color: #fff;
+}
+.training-info{
+  max-width: 455px;
+  margin-bottom: 25px;
+}
+.button__training{
+  color: #fff;
+  border: 1px solid #ffffff;
+}
+/*course*/
+.section__course{
+  background: linear-gradient(to bottom right, #ffffff 40%, #148bf3 20%, #1388ee 60%);
+  position: relative;
+  padding-top: 114px;
+}
+.section__course::after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background:#EAF1F7;
+}
+
+/*advant-course*/
+.section__advant-course{
+  padding-top: 120px;
+  padding-bottom: 50px;
+  background:#EAF1F7;
+}
+.advant-course{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+}
+.advant-course__title{
+  font-size: 36px;
+  padding-bottom: 60px;
+}
+.intensity__subtitle{
+  font-size: 20px;
+  padding-bottom: 35px;
+}
+.intensity__cards{
+  margin-bottom: 65px;
+}
+.card-1{
+  max-width: 200px;
+}
+.card-2{
+  max-width: 323px;
+}
+.card-3{
+  max-width: 290px;
+}
+.card-4{
+  max-width:244px;
+}
+.card-5{
+  max-width: 250px;
+}
+.card-6{
+  max-width:296px;
+}
+.card__title{
+  font-size: 16px;
+  line-height: 37px;
+  font-weight: bold;
+  padding-top: 21px;
+}
+
+/*tuition-fee*/
+.section__tuition-fee{
+  margin: 120px 0;
+  position: relative;
+}
+.section__tuition-fee::after{
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 73px;
+  top: -120px;
+  left: 50%;
+  background: #EAF1F7;
+}
+.tuition-fee{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+.tuition-fee__title{
+  font-size: 34px;
+  padding-bottom: 30px;
+}
+.tuition-fee__text{
+  max-width: 350px;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.tuition-fee__cards__subtitle{
+  font-size: 24px;
+  padding-bottom: 45px;
+  padding-top: 30px;
+}
+.tuition-fee__button{
+  padding: 15px 50px;
+  margin-top: 40px;
+}
+.tuition-fee__card__text{
+  padding-bottom: 30px;
+}
+.tuition-fee__cards__card{
+  max-width: 215px;
+  text-align: center;
+  font-size: 14px;
+}
+.tuition-fee__card__text--indent{
+  padding-bottom: 60px;
+}
+.tuition-fee__cards__card{
+  position: relative;
+}
+.tuition-fee__cards__card::before{
+  content:'';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  right: -200px;
+  top: 0;
+  background: #EAF1F7;
+}
+.tuition-fee__cards__card:last-child::before{
+  display: none;
+}
+
+/*subscription*/
+.section__subscription{
+  background:url(../img/subscription-bg.jpeg) no-repeat center / cover;
+  position: relative;
+  padding: 128px 0;
+}
+.section__subscription::after{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#03246cd7;
+
+}
+.subscription{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.subscription__title{
+  max-width: 420px;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding-bottom: 26px;
+}
+.subscription__subtitle{
+  max-width: 412px;
+  padding-bottom: 44px;
+}
+.subscription__form{
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  width: 100%;
+}
+.form__element{
+  margin-bottom: 24px;
+  height: 50px;
+  padding-left: 18px;
+}
+
+/*results*/
+.section__results{
+  padding-top: 120px;
+  padding-bottom: 115px;
+  position: relative;
+  background: url(../img/results-bg.png) no-repeat bottom left / 35%;
+}
+.section__results::after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #EAF1F7;
+  top: 0;
+  left: 0;
+}
+.results{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.results__title{
+  max-width: 265px;
+  margin-bottom: 30px;
+}
+.results__text{
+  max-width: 250px;
+  font-size: 16px;
+}
+.results__cards{
+  display: flex;
+}
+.results__card{
+  max-width: 263px;
+  width: 100%;
+}
+.results__card__img{
+  margin-bottom: 44px;
+}
+.results__card__title{
+  font-size: 24px;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 31px;
+}
+
+/*warranty*/
+.section__warranty{
+  background:#EAF1F7 url(../img/warranty-bg.png) no-repeat;
+  background-position: right;
+  padding-bottom: 120px;
+  padding-top: 130px;
+}
+.warranty{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.warranty__info{
+  max-width: 280px;
+  text-align: center;
+  margin-bottom: 28px;
+  font-weight: bold;
+}
+
+/*question*/
+.section__question{
+  background: radial-gradient(40% 50%, #0842B7, #051f55);
+  padding-top: 130px;
+  padding-bottom: 125px;
+}
+.question{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.question__title{
+  font-size: 23px;
+  color: #FFFFFF;
+  padding-bottom: 30px;
+}
+.question__subtitle{
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 450px;
+  text-align: center;
+}
+.question__form{
+  margin-top: 31px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.question__form__element{
+  max-width:270px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+
+/*адоптация*/
+@media(max-width:1300px)
+{
+  .container{
+    max-width: 95%;
+    margin: auto
+  }
+  /*header*/
+  .header__menu{
+    max-width: 400px;
+  }
+  /*advantages*/
+  .advantages__col__title{
+    font-size: 250px;
+  }
+  /*tuition-fee*/
+  .tuition-fee__cards__card::before{
+    content:'';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    right: -50px;
+    top: 0;
+    background: #EAF1F7;
+  }
+
+  /*tuition-fee*/
+  .tuition-fee__cards__card::before{
+    right: -150px
+  }
+  /*results*/
+  .col-50{
+    flex-basis: 65%;
+  }
+  /*question*/
+  .question__form__element{
+    max-width: 225px;
+  }
+}
+
+@media(max-width:992px)
+{
+  /*общее*/
+  .center--media{
+    text-align: center;
+    align-items:center;
+  }
+  .right--media{
+    text-align: right;
+    align-items:flex-end;
+  }
+  .button__link , .button__link-activ:hover{
+    font-size: 14px;
+  }
+  /*header*/
+  .section__header{
+    padding-top: 20px;
+    background:#fff;
+    z-index: 1;
+    position: relative;
+  }
+  .header{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .header__menu{
+    order: 2;
+    max-width: 100%;
+    justify-content: space-around;
+  }
+  /*hero*/
+  .section__hero{
+    background:url(../img/bg-hero.png) no-repeat center / 150%;
+    margin-top: -140px;
+  }
+  .hero{
+    padding-top: 80px;
+  }
+  .hero__title{
+    font-size: 50px;
+  }
+  .hero__subtitle{
+    font-size: 20px;
+  }
+  .hero__adv__text {
+    max-width: 280px;
+    font-size: 22px;
+  }
+  /*advantages*/
+  .section__advantages{
+    margin-top: -320px;
+  }
+  .advantages__stages{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .advantages__col{
+    flex-basis: 60%; 
+  }
+  /*advant-course*/
+  .card__text{
+    font-size: 13px;
+  }
+  /*tuition-fee*/
+  .tuition-fee__cards__card::before{
+    right: -100px
+  }
+
+  /*results*/
+  .results{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+  }
+  .our__results{
+    flex-basis: auto;
+    margin-bottom: 50px;
+  }
+  .col-50{
+    justify-content: space-around;
+  }
+  /*question*/
+  .question__form__element{
+    max-width: 165px;
+  }
+}
+
+@media(max-width:800px){
+  /*tuition-fee*/
+  .tuition-fee__cards__card::before{
+    right: -50px
+  }
+  /*question*/
+  .question__form{
+    flex-direction: column;
+    max-width: 234px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .question__subtitle{
+    max-width: 250px;
+  }
+  .question__form__element{
+    max-width: 234px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+@media(max-width:760px)
+{
+   /*hero*/
+   .section__hero{
+    background:url(../img/bg-hero.png) no-repeat center / 150%;
+    margin-top: -400px;
+   }
+   .hero{
+     padding-top: 300px;
+   }
+   .hero__title{
+     font-size: 40px;
+   }
+   .hero__subtitle{
+     padding-bottom: 10px;
+   }
+   .hero__buttons{
+     order: 1;
+     margin-top: 30px;
+   }
+   .hero__adv__text{
+     order: 0;
+   }
+   /*advantages*/
+   .section__advantages {
+    margin-top: -550px;
+  }
+  .advantages__col__title{
+    font-size: 200px;
+  }
+  .advantages__col{
+    flex-basis: 60%;
+    text-align: center;
+    align-items:center;
+  }
+  .advantages__title{
+    font-size: 30px;
+    max-width: 250px;
+  }
+  .advantages__text{
+    max-width: 250px;
+  }
+  .advantages__image{
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+  /*advant-course*/
+  .intensity__cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+  .cards__card{
+    padding-top: 30px;
+    max-width: 350px;
+  }
+  .intensity__subtitle {
+    font-size: 30px;
+  }
+  .card__title{
+    font-size: 20px;
+  }
+  .card__text{
+    font-size: 17px;
+  }
+  /*tuition-fee*/
+  .tuition-fee__cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+  .tuition-fee__button{
+    margin: 0;
+  }
+  .tuition-fee__cards__card::before{
+    display: none;
+  }
+  .tuition-fee__cards__card::after{
+    position: absolute;
+    content:'';
+    height: 2px;
+    width: 100%;
+    bottom: -30px;
+    right: 0;
+    background: #EAF1F7;
+  }
+  .tuition-fee__cards__card:last-child:after{
+    display: none;
+  }
+  .tuition-fee__cards__card{
+    margin-bottom: 30px;
+  }
+  .cards__card{
+    width: 100%;
+  }
+  .tuition-fee__title{
+    font-size: 22px;
+  }
+  .tuition-fee__text{
+    font-size: 17px;
+    padding-bottom: 20px;
+  }
+  .card__text{
+    font-size: 16px;
+  }
+
+   /*results*/
+  .results__cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*results*/
+  .section__results{
+    padding-bottom: 15px;
+  }
+  .results__card{
+    margin-bottom: 100px;
+  }
+}
+
+@media(max-width:560px)
+{
+  /*hero*/
+  .section__hero{
+    background:none;
+    margin-top: 0;
+    padding-top: 50px;
+  }
+  .hero{
+    padding-top: 0;
+  }
+  .hero__title{
+    font-size: 30px;
+    text-align: center
+  }
+  .hero__subtitle{
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 20px;
+    text-align: center
+  }
+  .hero__adv{
+    flex-direction: column;
+  }
+  .hero__adv__text , .hero__text{
+    text-align: center;
+    margin: auto;
+  }
+
+  /*advantages*/
+  .advantages__col__title{
+    font-size: 100px;
+  }
+  .advantages__title{
+    min-width: 100%;
+    text-align: center;
+  }
+  .subtitle__tetx{
+    font-size: 20px;
+  }
+  .advantages__col{
+    flex-basis: 100%;
+  }
+  .title--color{
+    font-size: 40px;
+  }
+  .subtitle__tetx{
+    max-width: 250px;
+  }
+
+  /*training*/
+  .info{
+    font-size: 18px;
+  }
+
+  /*advant-course*/
+  .advant-course__title{
+    font-size: 30px;
+  }
+  .cards__card{
+    padding-top: 30px;
+    max-width: 280px;
+    width: 100%;
+  }
+  .card__text{
+    font-size: 15px;
+  }
+
+  /*tuition-fee*/
+  .tuition-fee__text{
+    font-size: 15px;
+  }
+  /*subscription*/
+  .subscription__title{
+    font-size: 18px;
+  }
+  .subscription__subtitle{
+    font-size: 14px;
+  }
+
+  /*warranty*/
+  .warranty__button__link{
+    text-align: center;
+  }
+}
