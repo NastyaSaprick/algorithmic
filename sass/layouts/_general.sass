@@ -1,0 +1,82 @@
+/**общие настройки
+/**настройки цвета и шрифта
+.text--bold
+  font-weight: bold
+.text--selection
+  color: #06BEE1
+.text--light
+  color: #fff
+
+.section
+  padding: 120px 0
+
+/**псевдоэлементы к секциям (линии)
+.section
+  &--horizontal
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 2px
+      top: 0
+      left: 0
+      background:#EAF1F7
+  &--vertical
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 2px
+      height: 73px
+      top: 0
+      left: 50%
+      background: #EAF1F7
+      
+/**кнопки 
+.button
+  font-weight: bold
+  text-transform: uppercase
+  border-radius: 4px
+  &--primary
+    color: #fff
+    background: #0842B7
+  &--secondary
+    color: #0842B7
+    background: transparent
+    border: 1px solid #0842b7
+  &--light
+    color: #fff
+    background: transparent
+    border: 1px solid #fff
+
+  &:hover
+    box-shadow: 0 14px 28px rgba(3, 23, 139, 0.164), 0 10px 10px rgba(6, 8, 158, 0.13)
+
+/**блок с заголовком и подзаголовком
+.box-title
+  align-items: center
+  text-align: center
+  &__info
+    padding-top: 30px
+/**заголовок
+.title
+  font-size: 36px
+  font-weight: 300
+  text-align: center
+
+/**подзаголовок 
+.subtitle
+  font-size: 24px
+
+/**логотип
+.logo
+  align-items: center
+  text-transform: uppercase
+  font-size: 20px
+  font-weight: bold
+  max-width: 200px
+
+/**телефон 
+.telephone
+  font-size: 25px

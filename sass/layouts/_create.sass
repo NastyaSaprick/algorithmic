@@ -1,0 +1,121 @@
+.section
+  &__create
+    background: url(../img/create-bg.png)no-repeat left bottom / 30%
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      bottom: 0
+      right: 0
+      background: url(../img/create-2.png)no-repeat right bottom / 30%
+.create
+  align-items: center
+  justify-content: center
+  position: relative
+  z-index: 1
+  &__box-title
+    max-width: 485px
+    margin: auto
+    padding-bottom: 65px
+    &__title
+      padding-bottom: 30px
+    &__info
+      max-width: 355px
+      text-align: center
+
+// блок заголовка с калькулятором
+.create
+    &__block
+        &__calculator
+            &__box
+                &__title
+                    // блок заголовка
+                    &__sub-title
+                        // заголовок
+                        max-width: 300px
+                        padding-bottom: 35px
+                    &__sub-text
+                        // текст
+                        display: flex
+                        max-width: 188px
+
+// блок инфо с калькулятором
+.create
+    &__block
+        &__calculator
+            display: flex
+            align-items: center
+            &__box
+                &__instruction
+                    display: flex
+                    flex-direction: column
+                    // блок калькулятора
+                    &-head
+                        // верхний доп блок
+                        display: flex
+                        padding-bottom: 20px
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+                        &__case
+                            display: flex
+                            margin-left: 50px
+                            &:first-child
+                              margin-left: 0
+                    &-foot
+                        // нижний доп блокш
+                        padding-top: 20px
+                        display: flex
+                        &__case
+                            display: flex
+                            margin-left: 50px
+                            &:first-child
+                              margin-left: 0
+
+.calculator
+  &__box
+    &__title
+      &__subtitle
+        max-width: 255px
+        font-size: 22px
+        padding-bottom: 35px
+
+
+  &__text
+    max-width: 200px
+    margin-right: 20px
+    padding-left: 10px
+  &__input
+    max-width: 98px
+    max-height: 48px
+    border: 1px solid #cfdeee
+    border-radius: 4px
+    font-family: 'Roboto-Bold', sans-serif
+    color: #0f1c2e
+    font-size: 18px
+    padding-left: 18px
+    padding-top: 17px
+    padding-bottom: 17px
+    padding-right: 18px
+
+.button
+    &__create
+      max-width: 360px
+      margin-top: 50px
+      padding: 15px 28px
+
+.result
+  margin-top: 40px
+  margin-bottom: 20px
+  border: 1px solid rgba(0, 0, 0, 0.3)
+  text-align: center
+  &__none
+    display: none
+  &__title
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3)
+    padding: 15px 40px
+    border-radius: 4px
+    font-size: 20px
+  &__number
+    padding: 15px 40px
+    font-size: 20px

@@ -1,0 +1,68 @@
+.modal
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  display: flex
+  justify-content: center
+  align-items: center
+  &--visibility
+    opacity: 1
+    visibility: visible
+  &__dialog
+    position: relative
+    background: #fff
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.233), 0 10px 10px #01010556
+    padding: 40px
+  &__close
+    position: absolute
+    right: 0
+    top: 0
+    width: 28px
+    height: 28px
+    background: transparent url(../img/close.svg) no-repeat center
+    margin: 10px
+  &__title
+    font-size: 20px
+    font-weight: 500
+    padding: 20px 0
+    text-align: center
+  &__form
+  &__input
+    border-bottom: 1px solid 
+    padding-bottom: 5px
+    font-weight: 500
+    font-size: 17px
+    &::placeholder
+      color: #000
+  &__policy
+    display: flex
+    align-items: center
+    margin-top: 10px
+    margin-bottom: 20px
+  &__button
+    padding: 20px 
+    text-align: center
+
+.label
+  font-size: 14px
+  display: flex
+  margin-top: 30px
+  margin-bottom: 15px 
+
+.policy
+  &__checkbox
+    max-width: 20px
+
+.invalid 
+  color: tomato
+
+.input-group
+  display: flex
+  flex-direction: column

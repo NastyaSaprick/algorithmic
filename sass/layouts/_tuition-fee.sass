@@ -1,0 +1,35 @@
+.tuition-fee
+  align-items: center
+  &__info
+    max-width: 350px
+    text-align: center
+    padding-bottom: 75px
+  &__cards
+    &__card
+      max-height: 380px
+      height: 100%
+      position: relative
+      padding-bottom: 0
+      &::before
+        content: ''
+        position: absolute
+        width: 2px
+        height: 100%
+        right: -100px
+        top: 0
+        background: #EAF1F7
+      &:last-child
+        &::before
+          display: none
+      &__subtitle
+        padding-top: 30px
+        padding-bottom: 45px
+        display: block
+      &__text
+        padding-bottom: 30px
+      &__button
+        padding: 15px 50px
+        &-1
+          margin-top: 30px
+        &-2
+          margin-top: 10px

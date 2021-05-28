@@ -1,0 +1,138 @@
+.slider-two
+    background: linear-gradient(0deg,#03256c,#061826)
+    &__button
+        padding: 15px 50px
+        margin-left: 30px
+    &__block
+        padding-top: 100px
+        padding-bottom: 100px
+        z-index: 1
+        &__box
+            display: flex
+            &__left
+                margin-left: 50px
+                margin-right: 50px
+                &__title
+                    color: #ffffff
+                    font-size: 36px
+                    padding-bottom: 60px
+                    margin-left: -29px
+                &__sub-title
+                    color: #ffffff
+                    margin-left: -29px
+                    padding-bottom: 35px
+                &__list
+                    &__item
+                        padding-left: 5px
+                        color: #ffffff
+                        font-family: 'Roboto-Light', sans-serif
+                        padding-bottom: 25px
+                        &::marker
+                            color: #68799a
+                &__text
+                    padding-top: 25px
+                    color: #68799a
+                    max-width: 450px
+            &__right
+                max-width: 50% // *
+                &__nav
+                    display: flex
+                    margin-left: -29px
+                    padding-bottom: 60px
+                    align-items: center
+                    &__title
+                        color: #68799a
+                        padding-right: 50px
+                    &__item
+                        color: #68799a
+                        border: none
+                        background: transparent
+                        width: 34px
+                        height: 34px
+                        cursor: pointer
+                        &:hover
+                            background: #06bee1
+                            border-radius: 50%
+                            color: #ffffff
+                &__info
+                    border-bottom: 1px solid #26556c
+                    &__title
+                        color: #ffffff
+                        padding-bottom: 35px
+                        margin-left: -29px
+                    &__list
+                        &__item
+                            padding-left: 5px
+                            color: #ffffff
+                            padding-bottom: 70px
+                            &::marker
+                                color: #68799a
+                &__bonus
+                    &__title
+                        margin-left: -29px
+                        padding-top: 70px
+                        color: #ffffff
+                    &__text
+                        margin-left: -29px
+                        padding-top: 40px
+                        padding-left: 100px
+                        padding-bottom: 30px
+                        max-width: 450px
+                        color: #68799a
+                        background: url('../img/slider-two/giftbox.png') no-repeat left
+                            
+        &__buttons
+            padding-top: 75px
+            text-align: center
+            &__button
+                padding: 18px 50px
+                margin: 10px
+                &--left
+                    color: #ffffff
+
+.swiper-two
+    position: relative
+
+.swiper-button-next-two
+    display: flex
+    position: absolute
+    background: url('../img/slider-two/arrow.png') no-repeat center left
+    padding-right: 55px
+    margin-top: 265px
+    margin-right: 50px
+    &:after
+        display: none
+
+.swiper-button-prev-two
+    display: flex
+    position: absolute
+    background: url('../img/slider-two/arrow.png') no-repeat center left
+    padding-left: 55px
+    transform: rotate(-180deg)
+    margin-top: 265px
+    margin-left: 50px
+    &:after
+        display: none
+
+.swiper-slide-two
+    padding-left: 25px
+    padding-right: 25px
+
+.swiper-pagination-bullet
+    color: #68799a
+    border: none
+    background: transparent
+    width: 34px
+    height: 34px
+    text-align: center
+    line-height: 20px
+    font-size: 12px
+    opacity: 1
+    padding: 6px
+    &:first-child
+        margin-left: 125px
+
+.swiper-pagination-bullet-active
+    color: #fff
+    background: #007aff
+
